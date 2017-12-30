@@ -21,7 +21,7 @@ RUN apt-get update && \
         pngcrush schedtool xsltproc zip zlib1g-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD https://commondatastorage.googleapis.com/git-repo-downloads/repo /usr/local/bin/
+ADD utils/repo /usr/local/bin/
 RUN chmod 755 /usr/local/bin/*
 
 # Install latest version of JDK
